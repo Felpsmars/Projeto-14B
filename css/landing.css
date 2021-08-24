@@ -9,10 +9,22 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.form form label input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.5rem;
 }
 
 .form form label select {
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
