@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/landing.css" />
+    <script defer src="scripts/getHour.js"></script>
+    <body onload="updateClock(); setInterval('updateClock()', 1000 )"></body>
     <title>Personal Schedule</title>
   </head>
   <body>
+    <div id="time"></div>
     <div class="form">
-      <form action="">
+      <form id="form1" action="">
         <label for="">
           <input type="text" placeholder="Digite seu nome" />
         </label>
@@ -21,9 +24,9 @@
             <option value="null">Selecione seu Gênero</option>
             <option value="he">Ele/Dele</option>
             <option value="she">Ela/Dela</option>
-            <option value="bilu">Bilu/teteia</option>
           </select>
         </label>
+        <button type="submit" form="form1" value="Submit">Entrar</button>
       </form>
     </div>
   </body>

@@ -4,27 +4,48 @@
   box-sizing: border-box;
 }
 
+#time {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: sans-serif;
+}
+
+.form {
+  margin-top: 4rem;
+}
+
 .form form label {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .form form label input {
+  outline: none;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .form form label select {
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   border-radius: 10px;
+  outline: none;
+}
+
+form button {
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  justify-content: center;
+  padding: 0.5rem 3rem;
 }
