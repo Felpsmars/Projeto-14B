@@ -30,15 +30,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 10px;
-  padding: 0.5rem 0.5rem;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
 }
 
 .form form label select {
-  padding: 0.5rem 0.5rem;
+  padding: 0.2rem 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  border-radius: 10px;
+  border-radius: 4px;
   outline: none;
 }
 
@@ -48,4 +48,6 @@ form button {
   margin-top: 2rem;
   justify-content: center;
   padding: 0.5rem 3rem;
+  border-radius: 4px;
+  background-color: rgb(146, 188, 255);
 }
