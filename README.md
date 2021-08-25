@@ -7,8 +7,8 @@
 ### Sobre
 O sked é um organizador pessoal que conta com previsão do tempo, to do list e calendário. Surgiu como projeto bônus realizado durante hackaton do curso de Desenvolvimento Web da @betrybe.
 
-Tabela de conteúdos
-=================
+### Tabela de conteúdos
+
 <!--ts-->
    * [Sobre](#Sobre)
    * [Tabela de Conteudo](#tabela-de-conteudo)
