@@ -1,102 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --font-color: white;
-  --font-style: 'Lato', sans-serif;
-}
-
-body {
-  height: 100vh;
-  background: url('../assets/Mobile.png') no-repeat left top,
-    linear-gradient(rgb(28, 26, 26), rgb(28, 26, 26));
-  background-position: 100% 0;
-  background-size: 100%;
-}
-
-main {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  margin-top: 2rem;
-}
-
-h2 {
-  font-family: var(--font-style);
-  color: var(--font-color);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-h5 {
-  font-family: var(--font-style);
-  color: var(--font-color);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.container {
+form {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  padding: 1rem 3rem;
 }
 
-.big-weather {
-  font-size: 3.5rem;
-  margin-top: 0.5rem;
+form input {
+  border-radius: 3px;
+  margin-top: 1rem;
+  outline: none;
+  font-size: 0.75rem;
+  padding: 0.2rem;
 }
 
-.title {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+#button {
+  margin-top: 1rem;
 }
 
-.container img {
-  width: 12rem;
-}
-
-.forecast {
-  margin-top: 4rem;
-}
-
-.weather-image {
-  margin: 1rem 0;
-  max-width: 70%;
-}
-
-.roww {
-  display: flex;
-  justify-content: center;
-}
-
-.coluna {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.temperature {
-  font-size: 1.75rem;
-  font-family: var(--font-style);
-  color: var(--font-color);
-  margin-bottom: 0;
-}
-
-.week-day {
-  font-size: .9rem;
-
-  font-family: var(--font-style);
-  color: var(--font-color);
-  margin-bottom: 0;
+#menu {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  fill: white;
 }
