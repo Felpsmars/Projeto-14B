@@ -1,53 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#time {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  font-size: 2.5rem;
-  font-family: sans-serif;
+:root {
+  --font-color: white;
+  --font-style: 'Lato', sans-serif;
 }
 
-.form {
+body {
+  background-image: url('../assets/Mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+main {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-family: var(--font-style);
+  color: var(--font-color);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+h5 {
+  font-family: var(--font-style);
+  color: var(--font-color);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img {
+  width: 20rem;
+}
+
+.forecast {
   margin-top: 4rem;
 }
 
-.form form label {
+.weather-image {
+  margin: 1rem 0;
+  max-width: 70%;
+}
+
+.roww {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  padding: 0.5rem;
 }
 
-.form form label input {
-  outline: none;
+.coluna {
   display: flex;
-  flex-direction: row;
+  flex-flow: column wrap;
+  justify-content: flex-start;
   align-items: center;
-  border-radius: 4px;
-  padding: 0.2rem 0.5rem;
 }
 
-.form form label select {
-  padding: 0.2rem 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  border-radius: 4px;
-  outline: none;
+.temperature {
+  font-size: 2rem;
+  font-family: var(--font-style);
+  color: var(--font-color);
+  margin-bottom: 0;
 }
 
-form button {
-  display: flex;
-  margin: auto;
-  margin-top: 2rem;
-  justify-content: center;
-  padding: 0.5rem 3rem;
-  border-radius: 4px;
-  background-color: rgb(146, 188, 255);
+.week-day {
+  font-size: 1.3rem;
+
+  font-family: var(--font-style);
+  color: var(--font-color);
+  margin-bottom: 0;
 }
