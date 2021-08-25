@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLES -->
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+
+    <!-- BOOTSTRAP -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- SCRIPTS -->
+
+    <script defer src="scripts/getHour.js"></script>
+    <script defer src="scripts/city.js"></script>
+
+    <title>Personal Schedule</title>
 </head>
+
 <body>
-    
+    <main>
+        <svg id="menu" viewBox="0 0 100 80" width="15" height="15">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+        </svg>
+        <section class="section1">
+            <div class="container hero">
+                <img src="assets/weather-icon.png" alt="" />
+                <h2 class="big-weather">32°</h2>
+            </div>
+            <div class="container title">
+                <h2>Tangamandápio</h2>
+                <h5>Quinta, 25 de agosto</h5>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="container">
+                <div class="coluna">
+                    <img class="weather-image" src="assets/weather-icon-day1.png" alt="" />
+                    <p class="temperature">32°</p>
+                    <p class="week-day">Sexta</p>
+                </div>
+                <div class="coluna">
+                    <img class="weather-image" src="assets/weather-icon-day2.png" alt="" />
+                    <p class="temperature">32°</p>
+                    <p class="week-day">Sábado</p>
+                </div>
+                <div class="coluna">
+                    <img class="weather-image" src="assets/weather-icon-day3.png" alt="" />
+                    <p class="temperature">32°</p>
+                    <p class="week-day">Domingo</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
