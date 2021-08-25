@@ -12,10 +12,10 @@
 }
 
 body {
-  background-image: url('../assets/Mobile.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
+  background: url('../assets/Mobile.png') no-repeat left top,
+    linear-gradient(grey, black);
+  background-position: 100% 0;
+  background-size: 100%;
 }
 
 main {
