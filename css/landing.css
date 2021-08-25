@@ -12,11 +12,11 @@
 }
 
 body {
+  height: 100vh;
   background: url('../assets/Mobile.png') no-repeat left top,
-    linear-gradient(grey, black);
+    linear-gradient(rgb(28, 26, 26), rgb(28, 26, 26));
   background-position: 100% 0;
   background-size: 100%;
-
 }
 
 main {
@@ -28,18 +28,31 @@ main {
 h2 {
   font-family: var(--font-style);
   color: var(--font-color);
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h5 {
   font-family: var(--font-style);
   color: var(--font-color);
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.big-weather {
+  font-size: 3.5rem;
+  margin-top: 0.5rem;
 }
 
 .title {
@@ -49,7 +62,7 @@ h5 {
 }
 
 .container img {
-  width: 20rem;
+  width: 12rem;
 }
 
 .forecast {
@@ -81,7 +94,7 @@ h5 {
 }
 
 .week-day {
-  font-size: 1.1rem;
+  font-size: 1rem;
 
   font-family: var(--font-style);
   color: var(--font-color);
