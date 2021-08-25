@@ -23,6 +23,12 @@
   height: 45vh;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
 h2 {
   font-weight: 600 !important;
   font-family: var(--font-style);
