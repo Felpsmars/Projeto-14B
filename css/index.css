@@ -24,9 +24,10 @@
 }
 
 h2 {
-  display: flex;
-  justify-content: center;
-  color: white;
+  font-weight: 600 !important;
+  font-family: var(--font-style);
+  color: var(--font-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 1.1rem !important;
 }
 
