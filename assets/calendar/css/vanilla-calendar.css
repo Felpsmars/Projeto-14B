@@ -1,7 +1,7 @@
 :root {
   --vanilla-calendar-bg-color: #1e1c1c;
   --vanilla-calendar-border-radius: 5px;
-  --vanilla-calendar-border-color: #000000;
+  --vanilla-calendar-border-color: none;
   --vanilla-calendar-today-bg-color: #e7e9ed;
   --vanilla-calendar-today-color: #9099a1;
   --vanilla-calendar-selected-bg-color: #7c8d9c;
@@ -65,6 +65,8 @@
   font-weight: bold;
   text-align: center;
   width: 100%;
+  color: var(--vanilla-calendar-today-color);
+
 }
 
 .vanilla-calendar .vanilla-calendar-week {
@@ -95,6 +97,7 @@
 .vanilla-calendar .vanilla-calendar-date {
   align-items: center;
   background-color: #1e1c1c;
+  color: var(--vanilla-calendar-today-color);
   border-radius: var(--vanilla-calendar-border-radius);
   display: flex;
   flex-direction: column;
