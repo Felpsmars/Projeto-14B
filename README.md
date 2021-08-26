@@ -1,8 +1,8 @@
 <p align="center">
-      <img src="./sked-logo-white-color.png" height="150" width="175" alt="sked. the personal schedule" />
+      <img src="./sked-logo-white-line.png" height="150" width="175" alt="sked. the personal schedule" />
 </p>
 
-<h1 align="center">sked</h1>
+<h1 align="center">sked. the personal scheduler.</h1>
 
 ### Sobre
 O sked é um organizador pessoal que conta com previsão do tempo, to do list e calendário. Surgiu como projeto bônus realizado durante hackaton do curso de Desenvolvimento Web da @betrybe.
