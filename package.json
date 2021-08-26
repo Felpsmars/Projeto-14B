@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Felpsmars/Projeto-14b/issues"
   },
-  "homepage": "https://github.com/Felpsmars/Projeto-14b#readme"
+  "homepage": "https://github.com/Felpsmars/Projeto-14b#readme",
+  "dependencies": {
+    "fullcalendar": "^5.9.0"
+  }
 }

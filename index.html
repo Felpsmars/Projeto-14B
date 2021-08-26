@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- FULL CALENDAR  -->
+
+    <link href='fullcalendar/main.css' rel='stylesheet' />
+    <script src='fullcalendar/main.js'></script>
+
     <!-- STYLES -->
 
     <link rel="stylesheet" href="css/index.css" />
@@ -23,61 +28,56 @@
 
     <script defer src="scripts/getHour.js"></script>
     <script defer src="scripts/city.js"></script>
+    <script defer src="scripts/calendar.js"></script>
 
     <title>Personal Schedule</title>
 </head>
 
 <body>
     <main>
+        <img id="logo" src="assets/SKED" alt="">
         <svg id="menu" viewBox="0 0 100 80" width="15" height="15">
             <rect width="100" height="20"></rect>
             <rect y="30" width="100" height="20"></rect>
             <rect y="60" width="100" height="20"></rect>
         </svg>
-        <section class="section1">
+        <section class="top-section">
             <div class="container hero">
                 <img src="assets/weather-icon.png" alt="" />
                 <h2 class="big-weather">32°</h2>
             </div>
             <div class="container title">
-                <h2>Bem-vindx Glauco,</h1>
                 <h3>Tangamandápio</h3>
                 <h6>Quinta, 25 de agosto</h6>
             </div>
             <div class="container">
-                <div class="coluna">
+                <div class="weather-column">
                     <img class="weather-image" src="assets/weather-icon-day1.png" alt="" />
                     <p class="temperature">32°</p>
                     <p class="week-day">Sexta</p>
                 </div>
-                <div class="coluna">
+                <div class="weather-column">
                     <img class="weather-image" src="assets/weather-icon-day2.png" alt="" />
                     <p class="temperature">32°</p>
                     <p class="week-day">Sábado</p>
                 </div>
-                <div class="coluna">
+                <div class="weather-column">
                     <img class="weather-image" src="assets/weather-icon-day3.png" alt="" />
                     <p class="temperature">32°</p>
                     <p class="week-day">Domingo</p>
                 </div>
             </div>
         </section>
-        <section class="section2">
-            <div>
-                <ul> To-do List
-                    <li>Programar</li>
-                    <li>Pular corda</li>
-                    <li>Tocar cavaco</li>
-                    <li>Programar</li>
-                    <li>Pular corda</li>
-                    <li>Tocar cavaco</li>
+        <section class="bottom-section">
+            <div class="task-list">
+                <ul>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
                 </ul>
             </div>
-            <div>
-                <img class="calendar" src="assets/limpar-modelo-de-calendario-de-ano-novo_1017-29099.jpg" alt="">
-            </div>
-        </section>
-        <section class="section2">
+            <div id='calendar'></div>
         </section>
     </main>
 </body>
