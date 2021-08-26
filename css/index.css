@@ -141,7 +141,7 @@ li {
   display: none;
 }
 
-#calendar {
+#myCalendar {
   margin-top: 15rem;
 }
 
@@ -211,8 +211,8 @@ li {
   .title {
     margin-top: 10rem;
   }
-
-  #calendar {
+  #myCalendar {
     margin-top: 0;
+    margin-left: 27rem;
   }
 }

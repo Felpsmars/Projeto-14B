@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/Felpsmars/Projeto-14b#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fullcalendar/bootstrap": "^5.9.0",
+    "@fullcalendar/core": "^5.9.0",
+    "bootstrap": "^5.1.0",
     "fullcalendar": "^5.9.0"
   }
 }
