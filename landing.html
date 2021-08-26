@@ -28,21 +28,51 @@
     <!-- SCRIPTS -->
 
     <script defer src="scripts/getHour.js"></script>
-    <script defer src="scripts/city.js"></script>
+    <script defer src="scripts/javascript.js"></script>
 
     <title>Personal Schedule</title>
   </head>
 
   <body>
     <main>
-      <section class="section1"></section>
-      <section class="section2">
-        <form action="">
-          <input placeholder="Digite seu nome" type="text" />
-          <input placeholder="Digite sua cidade" type="text" />
-          <button type="submit" id="button">Entrar</button>
-        </form>
-      </section>
+      <div></div>
+      <div class="container hero">
+        <img src="assets/weather-icon.png" alt="" />
+        <h2 class="big-weather">32°</h2>
+      </div>
+      <div class="container title">
+        <h2 class="currCity">Belo Horizonte</h2>
+        <h5 class="currDate">Quinta, 25 de agosto</h5>
+      </div>
+      <div class="container forecast">
+        <div class="coluna">
+          <img
+            class="weather-image"
+            src="assets/weather-icon-day1.png"
+            alt=""
+          />
+          <p class="temperature">32°</p>
+          <p class="week-day">Sexta</p>
+        </div>
+        <div class="coluna">
+          <img
+            class="weather-image"
+            src="assets/weather-icon-day2.png"
+            alt=""
+          />
+          <p class="temperature">32°</p>
+          <p class="week-day">Sábado</p>
+        </div>
+        <div class="coluna">
+          <img
+            class="weather-image"
+            src="assets/weather-icon-day3.png"
+            alt=""
+          />
+          <p class="temperature">32°</p>
+          <p class="week-day">Domingo</p>
+        </div>
+      </div>
     </main>
   </body>
 </html>
