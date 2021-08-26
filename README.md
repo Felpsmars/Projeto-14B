@@ -1,5 +1,5 @@
 <p align="center">
-      <img src="./sked-logo-readme.png" height="150" width="175" alt="sked. the personal schedule" />
+      <img src="./sked-logo-white-color.png" height="150" width="175" alt="sked. the personal schedule" />
 </p>
 
 <h1 align="center">sked</h1>
