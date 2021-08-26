@@ -100,3 +100,7 @@ h5 {
   color: var(--font-color);
   margin-bottom: 0;
 }
+
+.card {
+  background-color: black;
+}

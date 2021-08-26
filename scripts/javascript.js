@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 // let currCity = document.querySelector('.currCity');
 const cityName = "Sao Paulo";
 const apiKey = '391cb458afed314af5e9f1fad92b26c1';
@@ -22,6 +22,24 @@ function showDate(className, data) {
   element.innerText = `${data}`;
 }
 
+function createCustomElement(element, className, innerText) {
+  const e = document.createElement(element);
+  e.className = className;
+  e.innerText = innerText;
+  return e;
+}
+
+function createWeatherCard(weather, temperature, monthlyDate) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  
+  card.appendChild(createCustomElement('span', 'weather-desc', weather));
+  card.appendChild(createCustomElement('span', 'temperature', temperature));
+  card.appendChild(createCustomElement('p', 'week-day', monthlyDate));
+  
+  return card;
+}
+const containerForecast = document.querySelector('.forecast');
 async function fetchApi() {
   try {
     const response = await fetch(`${apiUrl}`);
@@ -31,15 +49,16 @@ async function fetchApi() {
     const response1 = await fetch(`${apiUrlDaily}`);
     const jsonFetch1 = await response1.json()
     .then((e) => {
-      for (i=0;i<5;i+=1){
-      let date = new Date(e.list[((i+1)*8)-1].dt * 1000);
-      let monthlyDate = date.toDateString();
-      let weather = e.list[((i+1)*8)-1].weather[0].description;
-      let temperature = e.list[((i+1)*8)-1].main.temp;
-      let minTemp = e.list[((i+1)*8)-1].main.temp_min;
-      let maxTemp = e.list[((i+1)*8)-1].main.temp_max;
-      let humidity = e.list[((i+1)*8)-1].main.humidity;
-      console.log(monthlyDate, weather, temperature, minTemp, maxTemp, humidity);
+      for (i=0;i<3;i+=1){
+        let date = new Date(e.list[((i+1)*8)-1].dt * 1000);
+        let monthlyDate = date.toLocaleDateString();
+        let weather = e.list[((i+1)*8)-1].weather[0].description;
+        let temperature = e.list[((i+1)*8)-1].main.temp;
+        let minTemp = e.list[((i+1)*8)-1].main.temp_min;
+        let maxTemp = e.list[((i+1)*8)-1].main.temp_max;
+        let humidity = e.list[((i+1)*8)-1].main.humidity;
+        console.log(monthlyDate, weather, temperature, minTemp, maxTemp, humidity);
+        containerForecast.appendChild(createWeatherCard(weather, temperature, monthlyDate));
       };
     });
 
@@ -53,12 +72,11 @@ async function fetchApi() {
   }
 }
 
-fetchApi();
-/* window.onload = () => {
+
+window.onload = () => {
   fetchApi();
-  innerText();
 };
- */
+
 
 /* return (element.innerText = `${temp.toFixed(1)}`); */
 
