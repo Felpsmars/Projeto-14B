@@ -16,6 +16,49 @@ form input {
   margin-top: 1rem;
 }
 
+.container img {
+  width: 12rem;
+}
+
+.forecast {
+  margin-top: 4rem;
+}
+
+.weather-image {
+  margin: 1rem 0;
+  max-width: 70%;
+}
+
+.roww {
+  display: flex;
+  justify-content: center;
+}
+
+.coluna {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.temperature {
+  font-size: 1.75rem;
+  font-family: var(--font-style);
+  color: var(--font-color);
+  margin-bottom: 0;
+}
+
+.week-day {
+  font-size: .9rem;
+
+  font-family: var(--font-style);
+  color: var(--font-color);
+  margin-bottom: 0;
+}
+
+.card {
+  background-color: black;
+  
 #menu {
   position: absolute;
   right: 1rem;
