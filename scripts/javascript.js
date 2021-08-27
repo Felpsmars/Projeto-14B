@@ -29,11 +29,18 @@ function createCustomElement(element, className, innerText) {
   return e;
 }
 
-function createWeatherCard(weather, temperature, monthlyDate) {
+function createImage(imageSource) {
+  const img = document.createElement('img');
+  img.className = 'item__image';
+  img.src = imageSource;
+  return img;
+}
+
+function createWeatherCard(iconUrl, temperature, monthlyDate) {
   const card = document.createElement('div');
   card.className = 'weather-column';
   
-  card.appendChild(createCustomElement('span', 'weather-desc', weather));
+  card.appendChild(createImage(iconUrl));
   card.appendChild(createCustomElement('span', 'temperature', temperature));
   card.appendChild(createCustomElement('p', 'week-day', monthlyDate));
   
@@ -53,12 +60,14 @@ async function fetchApi() {
         let date = new Date(e.list[((i+1)*8)-1].dt * 1000);
         let monthlyDate = date.toLocaleDateString();
         let weather = e.list[((i+1)*8)-1].weather[0].description;
+        var iconCode= e.list[((i+1)*8)-1].weather[0].icon;
+        var iconUrl=`https://openweathermap.org/img/wn/${iconCode}.png`;
         let temperature = e.list[((i+1)*8)-1].main.temp;
         let minTemp = e.list[((i+1)*8)-1].main.temp_min;
         let maxTemp = e.list[((i+1)*8)-1].main.temp_max;
         let humidity = e.list[((i+1)*8)-1].main.humidity;
         console.log(monthlyDate, weather, temperature, minTemp, maxTemp, humidity);
-        containerForecast.appendChild(createWeatherCard(weather, temperature, monthlyDate));
+        containerForecast.appendChild(createWeatherCard(iconUrl, temperature, monthlyDate));
       };
     });
 
